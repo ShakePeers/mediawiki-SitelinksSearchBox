@@ -1,5 +1,5 @@
 {
-	"name": "shakeepers/mediawiki-sitelinkssearchbox",
+	"name": "shakeepers/sitelinks-search-box",
 	"description": "Provide Sitelinks Search Box to Google",
 	"license": "GPL-3.0",
 	"type": "mediawiki-extension"
