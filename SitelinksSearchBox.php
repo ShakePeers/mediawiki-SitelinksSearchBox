@@ -1,27 +1,28 @@
 <?php
 /**
  * SitelinksSearchBox
- * Provide Sitelinks Search Box to Google
+ * Provide Sitelinks Search Box to Google.
  *
  * PHP version 5.4
  *
  * @category Extension
- * @package  SitelinksSearchBox
+ *
  * @author   Pierre Rudloff <contact@rudloff.pro>
  * @license  GPL http://www.gnu.org/licenses/gpl.html
+ *
  * @link     https://github.com/ShakePeers/mediawiki-SitelinksSearchBox
  * */
-$wgExtensionCredits['validextensionclass'][] = array(
-   'name' => 'SitelinksSearchBox',
-   'author' =>'ShakePeers', 
-   'url' => 'http://shakepeers.org/'
-);
+$wgExtensionCredits['validextensionclass'][] = [
+   'name'   => 'SitelinksSearchBox',
+   'author' => 'ShakePeers',
+   'url'    => 'http://shakepeers.org/',
+];
 
 /**
- * Add JSON-LD to head
+ * Add JSON-LD to head.
  *
  * @param OutputPage $out HTML page
- * 
+ *
  * @return void
  * */
 function sitelinksSearchBox(&$out)
@@ -45,4 +46,3 @@ function sitelinksSearchBox(&$out)
 }
 
 $wgHooks['BeforePageDisplay'][] = 'sitelinksSearchBox';
-?>
